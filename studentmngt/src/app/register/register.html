@@ -1,0 +1,94 @@
+<div class="auth-shell">
+  <section class="brand-panel">
+    <div class="brand">
+      <div class="brand-mark">SM</div>
+      <div>
+        <h1>Student Manager</h1>
+        <p>Create a single hub for student progress.</p>
+      </div>
+    </div>
+    <ul class="feature-list">
+      <li>Invite teachers and assistants in minutes</li>
+      <li>Track attendance with smart reminders</li>
+      <li>Keep student data safe and organized</li>
+    </ul>
+    <div class="mini-stats">
+      <div>
+        <h3>3 min</h3>
+        <span>Setup time</span>
+      </div>
+      <div>
+        <h3>100%</h3>
+        <span>Cloud synced</span>
+      </div>
+      <div>
+        <h3>50+</h3>
+        <span>Reports</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-panel">
+    <h2>Create your account</h2>
+    <p class="subtitle">Join the dashboard used by smart campuses.</p>
+
+    <form class="auth-form">
+      <label for="register-name">Full Name</label>
+      <input class="input" id="register-name" type="text" placeholder="Enter full name" />
+
+      <label for="register-email">Email</label>
+      <input class="input" id="register-email" type="email" placeholder="name@sanjivanicoe.org.in" />
+
+      <label for="register-password">Password</label>
+      <div class="input-group">
+        <input
+          class="input"
+          id="register-password"
+          [type]="showPassword ? 'text' : 'password'"
+          placeholder="Create a password"
+        />
+        <button
+          class="icon-btn"
+          type="button"
+          (click)="togglePassword()"
+          [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 5c5.2 0 9.6 3.1 11 7-1.4 3.9-5.8 7-11 7S2.4 15.9 1 12c1.4-3.9 5.8-7 11-7zm0 2C7.8 7 4.2 9.4 3 12c1.2 2.6 4.8 5 9 5s7.8-2.4 9-5c-1.2-2.6-4.8-5-9-5zm0 2.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <label for="register-confirm-password">Confirm Password</label>
+      <div class="input-group">
+        <input
+          class="input"
+          id="register-confirm-password"
+          [type]="showConfirmPassword ? 'text' : 'password'"
+          placeholder="Confirm password"
+        />
+        <button
+          class="icon-btn"
+          type="button"
+          (click)="toggleConfirmPassword()"
+          [attr.aria-label]="showConfirmPassword ? 'Hide password' : 'Show password'"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 5c5.2 0 9.6 3.1 11 7-1.4 3.9-5.8 7-11 7S2.4 15.9 1 12c1.4-3.9 5.8-7 11-7zm0 2C7.8 7 4.2 9.4 3 12c1.2 2.6 4.8 5 9 5s7.8-2.4 9-5c-1.2-2.6-4.8-5-9-5zm0 2.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <button class="primary" type="submit">Create Account</button>
+    </form>
+
+    <p class="switch">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+  </section>
+</div>

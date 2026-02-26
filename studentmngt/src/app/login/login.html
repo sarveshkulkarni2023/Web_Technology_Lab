@@ -1,0 +1,77 @@
+<div class="auth-shell">
+  <section class="brand-panel">
+    <div class="brand">
+      <div class="brand-mark">SM</div>
+      <div>
+        <h1>Student Management</h1>
+        <p>Smart tracking for attendance, scores, and progress.</p>
+      </div>
+    </div>
+    <ul class="feature-list">
+      <li>Insights dashboard for every class</li>
+      <li>Quick export for grades and reports</li>
+      <li>Secure access with role-based views</li>
+    </ul>
+    <div class="mini-stats">
+      <div>
+        <h3>98%</h3>
+        <span>On-time updates</span>
+      </div>
+      <div>
+        <h3>24/7</h3>
+        <span>Availability</span>
+      </div>
+      <div>
+        <h3>150+</h3>
+        <span>Active classes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-panel">
+    <h2>Welcome back</h2>
+    <p class="subtitle">Sign in to continue your dashboard.</p>
+
+    <form class="auth-form">
+      <label for="login-email">Email</label>
+      <input class="input" id="login-email" type="email" placeholder="name@sanjivanicoe.org.in" />
+
+<label for="login-password">Password</label>
+<div class="input-group">
+  <input
+    class="input"
+    id="login-password"
+    [type]="showPassword ? 'text' : 'password'"
+    placeholder="Enter your password"
+  />
+  <button
+    class="icon-btn"
+    type="button"
+    (click)="togglePassword()"
+    [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12 5c5.2 0 9.6 3.1 11 7-1.4 3.9-5.8 7-11 7S2.4 15.9 1 12c1.4-3.9 5.8-7 11-7zm0 2C7.8 7 4.2 9.4 3 12c1.2 2.6 4.8 5 9 5s7.8-2.4 9-5c-1.2-2.6-4.8-5-9-5zm0 2.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"
+      />
+    </svg>
+  </button>
+</div>
+
+      <div class="form-row">
+        <label class="check">
+          <input type="checkbox" />
+          Remember me
+        </label>
+        <span class="muted">Forgot password?</span>
+      </div>
+
+      <button class="primary" type="submit">Login</button>
+    </form>
+
+    <p class="switch">
+      Don&#39;t have an account?
+      <a routerLink="/register">Create one</a>
+    </p>
+  </section>
+</div>
