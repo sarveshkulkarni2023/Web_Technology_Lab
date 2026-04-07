@@ -1,0 +1,392 @@
+body {
+  color: white; 
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 0;
+  background-color: black;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.title h1 span{
+  background: linear-gradient(orange, gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.title h1 {
+  font-weight: 700;
+}
+
+.title img {
+  width: 60px;
+  margin-top: 15px;
+  margin-right: 6px;
+}
+
+.title p{
+  color: gold;
+  margin: 0;
+  margin-left: 6px;
+  font-size: 18px;
+  padding: 8px 10px 4px 10px;
+  border-radius: 14px;
+  align-self: center;
+}
+
+.content{
+  display: flex;
+  gap: 40px;
+}
+.content ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style: none;
+}
+
+ul li a{
+  color: gold;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.content ul li:hover{
+  border-bottom: 2px solid gold;
+}
+
+.content button{
+  margin-top: 10px;
+  height: 40px;
+  background-color: gold;
+  color: black;
+  border: 1px solid gold;
+  padding: 4px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.content button:hover{
+  background-color: rgba(255, 217, 0, 0.388);
+  color: white;
+}
+
+.content button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.filters {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-group {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.2rem;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+#languageFilter {
+  background: rgba(17, 25, 43, 0.9);
+  border: 1px solid rgb(158, 157, 157);
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 14px;
+}
+
+option {
+  background-color: transparent;
+}
+
+.searchbox {
+  padding: 0.225rem;
+  width: 90%;
+  max-width: 30rem;
+  height: 2rem;
+  border: 1px solid gold;
+  border-radius: 30px;
+  display: flex;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+.searchbox span {
+  margin-top: 4px;
+  padding-right: 10px;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+}
+
+.searchbox:focus {
+  outline: none;
+}
+
+.section-title {
+  color: rgb(167, 166, 166);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section-title2 {
+  margin-top: 40px;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.language{
+  color: gray;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.featured-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.featured-row::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-card {
+  color: white;
+  min-width: 149px;
+  max-width: 200px;
+  background: radial-gradient(circle at top, rgba(17, 25, 43, 0.9), #020617);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.7);
+  position: relative;
+  cursor: pointer;
+}
+
+.featured-card:hover {
+  border: 1px solid gold;
+  transform: scaleY(2px);
+  transition-duration: 4ms;
+}
+
+.featured-card img {
+  border-radius: 18px;
+  height: 240px;
+}
+
+.featured-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.featured-meta {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.card-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.book-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.94), #020617);
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.book-cover-wrapper img{
+  height: 300px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-chip{
+  border: 1px solid#fb923c;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+  background-color: #fb923c61;
+  font-size: 14px;
+  font-size: 500;
+}
+
+.book-title{
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-author{
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.book-meta-row{
+  margin-top: 10px;
+}
+
+.pill-mini{
+  padding: 4px 10px 4px 10px;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  background: #9ca3af2e;
+  border: 1px solid gold;
+  margin-right: 10px;
+  justify-content: center;
+  border-radius: 14px;
+}
+
+.star-filled{
+  color: yellow;
+}
+
+.book-desc{
+  font-size: 12px;
+}
+
+.readlist-btn{
+  background-color: rgba(172, 255, 47, 0.493);
+  border: 1px solid greenyellow;
+  color: #ffff;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 4px 14px 4px 14px;
+  border-radius: 8px;
+}
+
+.rating-text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.readlist-btn:hover{
+  background-color:rgba(172, 255, 47, 0.253);
+}
+
+.rating-text span{
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.moreBtn{
+  margin-top: 20px;
+}
+
+.readBtn{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  background-color: rgba(172, 255, 47, 0.397);
+  border: 1px solid greenyellow;
+  color: #ffff;
+  border-radius: 10px;
+}
+
+.readBtn:hover{
+  background-color:rgba(172, 255, 47, 0.253);
+}
+
+.footerClass{
+  margin-top: 40px;
+  padding: 10px 20px 30px 40px;
+  background-color: rgba(255, 217, 0, 0.219);
+  border-top: 1px solid gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation ul{
+  list-style: none;
+  color: white;
+}
+
+.navigation ul li{
+  padding: 8px;
+  color: #ffff;
+}
+
+.contact h2{
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navigation h2{
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}

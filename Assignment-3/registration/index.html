@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form id="regForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Full name">
+            <div class="error" id="nameErr">Please enter a valid name (letters and spaces only).</div>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" placeholder="mobile number">
+            <div class="error" id="mobileErr">Please enter a valid 10-digit mobile number.</div>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="City">
+            <div class="error" id="cityErr">Please enter your city.</div>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Address"></textarea>
+            <div class="error" id="addressErr">Please enter your address.</div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <div class="error" id="emailErr">Please enter a valid email address.</div>
+
+            <div class="actions">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

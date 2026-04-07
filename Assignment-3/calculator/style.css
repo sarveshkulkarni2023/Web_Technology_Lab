@@ -1,0 +1,48 @@
+* {
+
+
+    .calculator {
+        width: 320px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+
+    .display {
+        height: 100px;
+        color: white;
+        background: #bbbb;
+        font-size: 60px;
+        text-align: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+
+    .btn {
+        height: 65px;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .btn:active {
+        opacity: 0.7;
+    }
+
+
+    .btn.light {
+        background: #a5a5a5;
+        color: black;
+    }
+}

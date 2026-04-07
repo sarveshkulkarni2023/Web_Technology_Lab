@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="title">
+      <span><img src="images/BookLogo.png" alt=""></span>
+      <h1><span>Book</span> Verse</h1>
+      <p>- A comprehensive link to all books</p>
+    </div>
+
+    <div class="content">
+      <ul>
+        <li><a href=""> Home</a></li>
+        <li><a href=""> Wishlist</a></li>
+        <li><a href=""> Cart</a></li>
+        <li><a href=""> Membership</a></li>
+        <li><a href=""> Deals</a></li>
+      </ul>
+      <button><a href="./login.html">Login / Sign Up</a></button>
+    </div>
+    <div>
+
+    </div>
+  </nav>
+
+  <section class="filters">
+    <div class="searchbox">
+      <span class="search-icon"> 🔍 </span>
+      <input type="text" id="search-input" placeholder=" Search by title or author .....">
+    </div>
+    <div class="filter-group">
+      <div>
+        <label for="languageFilter">Language : </label>
+        <select id="languageFilter">
+          <option value="all">All</option>
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="marathi">Marathi</option>
+        </select>
+      </div>
+      <div>
+        <label for="languageFilter">Genre : </label>
+        <select id="languageFilter">
+          <option value="all">All</option>
+          <option value="english">Classic</option>
+          <option value="hindi">Fiction</option>
+          <option value="marathi">Non-Fiction</option>
+        </select>
+      </div>
+      <div>
+        <label for="languageFilter">Sort by : </label>
+        <select id="languageFilter">
+          <option value="all">Newest First</option>
+          <option value="english">Author A-Z</option>
+          <option value="hindi">Oldest First</option>
+          <option value="marathi">Rating: Low to High</option>
+          <option value=""></option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">FEATURED PICKS</h2>
+  <div id="featuredRow" class="featured-row">
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/gunahon-ka-devta.jpg" alt="Gunahon Ka Devta cover" class="featured-cover"
+        onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Gunahon Ka Devta</div>
+      <div class="featured-meta">
+        Dharamvir Bharati • Hindi • 1949<br>
+        ⭐ 4.7 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/octoberJunction.jpeg" alt="october junction" class="featured-cover"
+        onerror="this.style.opacity='0.3';">
+      <div class="featured-title">October Junction</div>
+      <div class="featured-meta">
+        Contemporary Hindi Author • Hindi • 2020<br>
+        ⭐ 4.7 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/musafir-cafe.jpeg" alt="musafir cafe" class="featured-cover" onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Musafir Cafe</div>
+      <div class="featured-meta">
+        Dharamvir Bharati • Hindi • 1949<br>
+        ⭐ 4.7 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/godan.jpg" alt="Godan" class="featured-cover" onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Godan</div>
+      <div class="featured-meta">
+        Munsi Premchand • Hindi • 1936<br>
+        ⭐ 4.8 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/1984.jpeg" alt="1984" class="featured-cover" onerror="this.style.opacity='0.3';">
+      <div class="featured-title">1984</div>
+      <div class="featured-meta">
+        George Orwell • English • 1949<br>
+        ⭐ 4.7 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/The Alchemist.jpeg" alt="The Alchemist" class="featured-cover"
+        onerror="this.style.opacity='0.3';">
+      <div class="featured-title">The Alchemist</div>
+      <div class="featured-meta">
+        Paulo Coehleo • English • 1988<br>
+        ⭐ 4.3 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/Atomic Habits.jpeg" alt="Atomic Habits" class="featured-cover"
+        onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Atomic Habits</div>
+      <div class="featured-meta">
+        James Clear • English • 2018<br>
+        ⭐ 4.8 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/Harry Potter.jpeg" alt="Harry Potter" class="featured-cover" onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Harry Potter</div>
+      <div class="featured-meta">
+        Joanne Rowling • English • 1997<br>
+        ⭐ 4.9 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/Sapiens.jpeg" alt="Sapiens" class="featured-cover" onerror="this.style.opacity='0.3';">
+      <div class="featured-title">Sapiens</div>
+      <div class="featured-meta">
+        Yuval Noah Harari • English • 2011<br>
+        ⭐ 4.7 avg
+      </div>
+    </article>
+    <article class="featured-card" data-book-id="b1">
+      <img src="images/The Kite Runner.jpeg" alt="The Kite Runner" class="featured-cover"
+        onerror="this.style.opacity='0.3';">
+      <div class="featured-title">The Kite Runner</div>
+      <div class="featured-meta">
+        Khaled Hosseini • English • 2003<br>
+        ⭐ 4.6 avg
+      </div>
+    </article>
+  </div>
+
+  <div class="section-title2">All Books</div>
+  <div class="language">Hindi + English + multi-language mix – perfect for exams, fun, and perspective.</div>
+
+  <section class="card-grid">
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/octoberJunction.jpeg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">Hindi</span>
+          <div class="book-title">October Junction</div>
+          <div class="book-author">Contemporary Hindi Author • 2020</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Contemporary</span><span class="pill-mini">Fiction</span>
+        </div>
+
+        <p class="book-desc">
+          Dive into October Junction, a poignant Hindi novel that captures the fragile beauty of human relationships.
+          The story follows Chitra and Sudip, who meet on October 10th every year for ten years in Banaras. It’s a
+          heartfelt journey exploring the warmth of first love, the ache of separation, and a bond that defies
+          conventional labels.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.4 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/nirmala.jpeg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">Hindi</span>
+          <div class="book-title">Nirmala</div>
+          <div class="book-author">Munsi Premchand • 1927</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Societal Pressure</span>
+          <span class="pill-mini">Gender Roles</span>
+          <span class="pill-mini">Injustice</span>
+        </div>
+
+        <p class="book-desc">
+          A heart-wrenching masterpiece by Munshi Premchand, Nirmala tells the tragic story of a young girl forced into
+          a marriage with an elderly widower. First published in 1928, this timeless novel is a powerful, realistic
+          critique of the dowry system, child marriage, and the rigid patriarchy of early 20th-century Indian society.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.8 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/gunahon-ka-devta.jpg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">Hindi</span>
+          <div class="book-title">Gunahon Ka Devta</div>
+          <div class="book-author">Munsi Premchand • 1949</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Moral Dilemmas</span>
+          <span class="pill-mini">Sacrifice and Guilt</span>
+          <span class="pill-mini">Timeless Classic</span>
+        </div>
+
+        <p class="book-desc">
+          Gunahon Ka Devta is a timeless Hindi masterpiece that explores the intense, non-expressive love between two
+          characters, Chandar and Sudha, against the backdrop of pre-independence Allahabad. It is a heartbreaking tale
+          of love, societal pressures, and the emotional, moral sacrifices that come with it.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.7 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/the godfather.jpeg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">English</span>
+          <div class="book-title">The Godfather</div>
+          <div class="book-author">Mario Puzo • 1969</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Genre</span>
+          <span class="pill-mini">The Conflict</span>
+          <span class="pill-mini">The Patriarch</span>
+        </div>
+
+        <p class="book-desc">
+          Mario Puzo’s The Godfather is a searing, unforgettable portrait of the Mafia underworld. It is a story of
+          family, law and order, and the seductive, violent allure of power in American society. When Don Vito Corleone,
+          head of a powerful New York Mafia family, is gunned down by rival mobsters, a brutal war breaks out.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.8 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/train to pakistan.jpeg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">English</span>
+          <div class="book-title">Train to Pakistan</div>
+          <div class="book-author">Khushwant Singh • 1956</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Genre</span>
+          <span class="pill-mini">Political division</span>
+          <span class="pill-mini">communal Hatred</span>
+        </div>
+
+        <p class="book-desc">
+          In the isolated village of Mano Majra, Sikhs and Muslims have coexisted for centuries. As the partition of
+          India is announced, the violence of the outside world reaches the village, bringing mistrust and terror. When
+          a train arrives carrying the bodies of refugees, the community fractures.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.6 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card" data-book-id="b2">
+      <div class="book-cover-wrapper">
+        <img src="images/The Hobbit.jpeg" alt="October Junction cover" class="book-cover"
+          onerror="this.style.opacity='0.25';">
+      </div>
+      <div class="book-content">
+        <div>
+          <span class="lang-chip">English</span>
+          <div class="book-title">The Hobbit</div>
+          <div class="book-author">J. R. R. Tolkien • 1937</div>
+        </div>
+
+        <div class="book-meta-row">
+          <span class="pill-mini">Children's Fantasy</span>
+          <span class="pill-mini">Adventure</span>
+        </div>
+
+        <p class="book-desc">
+          Bilbo Baggins is a comfort-loving, home-loving hobbit who rarely travels further than his own pantry. His
+          quiet life is turned upside down when the wizard Gandalf and a company of thirteen dwarves arrive on his
+          doorstep, recruiting him as a "burglar" for a perilous quest to the Lonely Mountain.
+        </p>
+
+        <div class="rating-row">
+          <div class="rating-left">
+            <div class="stars" data-book-id="b2">
+              <span class="star filled" data-star="1">★</span>
+              <span class="star filled" data-star="2">★</span>
+              <span class="star filled" data-star="3">★</span>
+              <span class="star filled" data-star="4">★</span>
+              <span class="star " data-star="5">★</span>
+            </div>
+            <div class="rating-text">
+              <span>Avg:</span> 4.5 | 5
+            </div>
+            <button class="readlist-btn " data-book-id="b2" type="button">
+              + Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="moreBtn">
+    <button class="readBtn" type="button">
+      Read More +
+    </button>
+  </div>
+
+  <footer class="footerClass">
+    <div class="navigation">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Media Center</a></li>
+        <li><a href="">Register for more information</a></li>
+        <li><a href="">Terms and Conditions</a></li>
+        <li><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <h3>Address:</h3>
+      <p>No: 24, 2nd Cross Gandhinagar, Bengaluru, Karnataka, India - 560 009</p>
+      <h3>Email:</h3>
+      <p>bookverse@gmail.com</p>
+      <h3>Contact : +91 8605890513</h3>
+    </div>
+    <div class="footer-right">
+      <h3>Location:</h3>
+      <span id="map-location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.6141059117178!2d74.49429544571373!3d19.90073306808861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc458fd1affe9f%3A0x803a080e03c5a50a!2sSanjivani%20University!5e1!3m2!1sen!2sin!4v1770041565195!5m2!1sen!2sin"
+          width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" margin-bottom="20px"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </span>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
