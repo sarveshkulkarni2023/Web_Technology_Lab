@@ -1,0 +1,38 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.ebook:ebook-inventory >----------------------
+[INFO] Building ebook-inventory 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ebook-inventory ---
+[INFO] Deleting /home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ebook-inventory ---
+[INFO] skip non existing resourceDirectory /home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ ebook-inventory ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 7 source files with javac [debug target 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ebook-inventory ---
+[INFO] skip non existing resourceDirectory /home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ ebook-inventory ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ ebook-inventory ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ ebook-inventory ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [ebook-inventory] in [/home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/target/ebook-inventory]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/src/main/webapp]
+[INFO] Building war: /home/shri/Documents/Web-Technology-Laboratory/Assignment-7/ebook-inventory/target/ebook-inventory.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.398 s
+[INFO] Finished at: 2026-04-09T21:45:30+05:30
+[INFO] ------------------------------------------------------------------------

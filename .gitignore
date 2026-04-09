@@ -1,0 +1,13 @@
+# Maven
+apache-maven-*
+
+# Build files
+target/
+*.jar
+*.war
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
