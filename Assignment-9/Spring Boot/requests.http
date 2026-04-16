@@ -1,0 +1,75 @@
+#!/bin/bash
+
+### Test Endpoints for Hello-World Spring Boot Service
+### Use with REST Client (VS Code REST Client extension, Postman, Insomnia, etc.)
+
+@baseUrl = http://localhost:8082
+@apiUrl = {{baseUrl}}/api
+
+###
+### 1. Simple Hello Endpoint
+###
+GET {{apiUrl}}/hello
+
+###
+### 2. Welcome Endpoint
+###
+GET {{apiUrl}}/
+
+###
+### 3. Greet with Path Variable
+###
+GET {{apiUrl}}/greet/John
+
+###
+### 4. Greet with Query Parameters (both optional)
+###
+GET {{apiUrl}}/greeting?name=Alice&role=Student
+
+###
+### 5. Greet with Only Name Parameter (role uses default value)
+###
+GET {{apiUrl}}/greeting?name=Bob
+
+###
+### 6. Greet with Only Role Parameter (name uses default value)
+###
+GET {{apiUrl}}/greeting?role=Faculty
+
+###
+### 7. POST Request with JSON Body
+###
+POST {{apiUrl}}/welcome
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "module": "Faculty"
+}
+
+###
+### 8. Health Check
+###
+GET {{apiUrl}}/health
+
+###
+### 9. POST Request - Student Module (for future expansion)
+###
+POST {{apiUrl}}/welcome
+Content-Type: application/json
+
+{
+  "name": "Diana",
+  "module": "Student"
+}
+
+###
+### 10. POST Request - Admin Module (for future expansion)
+###
+POST {{apiUrl}}/welcome
+Content-Type: application/json
+
+{
+  "name": "Eve",
+  "module": "Admin"
+}
